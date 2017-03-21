@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i');
 
 
-* {
+body {
   box-sizing: border-box;
   font-size: 16px;
   margin: 0;
@@ -636,7 +636,11 @@ footer .footer {
 
 
 /* Responsive */
-
+@media all and (max-width: 1008px) {
+  .p-header {
+    height: 1035px !important;
+  }
+}
 @media all and (max-width: 1024px) {
   main, header, footer {
     max-width: 1024px;
@@ -686,7 +690,7 @@ footer .footer {
     justify-content: space-around;
   }
   .p-header {
-    height: 1100px;
+    height: 1100px !important;
   }
 }
 
@@ -729,7 +733,7 @@ footer .footer {
     margin: 35px auto;
   }
   .p-header {
-    height: 1900px;
+    height: 1900px !important;;
   }
 
   .p-header-separator::before, .staff-header-separator::before {
